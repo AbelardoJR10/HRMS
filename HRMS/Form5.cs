@@ -38,7 +38,7 @@ namespace HRMS
         // Clears the Data  
         private void ClearData()
         {
-            //txtIDSearch.Text = "";
+            
             viewtextboxbtn.Text = "";
         }
 
