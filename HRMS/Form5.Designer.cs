@@ -37,7 +37,6 @@
             this.viewtextboxbtn = new System.Windows.Forms.TextBox();
             this.searchbtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.showdatabtn = new System.Windows.Forms.Button();
             this.idColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surnameColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +44,7 @@
             this.addressColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmailColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.showdatabtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -120,10 +120,10 @@
             // 
             // viewtextboxbtn
             // 
-            this.viewtextboxbtn.Location = new System.Drawing.Point(464, 208);
+            this.viewtextboxbtn.Location = new System.Drawing.Point(473, 208);
             this.viewtextboxbtn.Margin = new System.Windows.Forms.Padding(4);
             this.viewtextboxbtn.Name = "viewtextboxbtn";
-            this.viewtextboxbtn.Size = new System.Drawing.Size(280, 31);
+            this.viewtextboxbtn.Size = new System.Drawing.Size(307, 31);
             this.viewtextboxbtn.TabIndex = 5;
             this.viewtextboxbtn.TextChanged += new System.EventHandler(this.viewtextboxbtn_TextChanged);
             // 
@@ -156,16 +156,6 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(1147, 260);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // showdatabtn
-            // 
-            this.showdatabtn.Location = new System.Drawing.Point(1105, 314);
-            this.showdatabtn.Name = "showdatabtn";
-            this.showdatabtn.Size = new System.Drawing.Size(168, 57);
-            this.showdatabtn.TabIndex = 8;
-            this.showdatabtn.Text = "Show data";
-            this.showdatabtn.UseVisualStyleBackColor = true;
-            this.showdatabtn.Click += new System.EventHandler(this.showdatabtn_Click);
             // 
             // idColumn1
             // 
@@ -222,6 +212,16 @@
             this.EmailColumn7.MinimumWidth = 10;
             this.EmailColumn7.Name = "EmailColumn7";
             this.EmailColumn7.Width = 200;
+            // 
+            // showdatabtn
+            // 
+            this.showdatabtn.Location = new System.Drawing.Point(1105, 314);
+            this.showdatabtn.Name = "showdatabtn";
+            this.showdatabtn.Size = new System.Drawing.Size(168, 57);
+            this.showdatabtn.TabIndex = 8;
+            this.showdatabtn.Text = "Show data";
+            this.showdatabtn.UseVisualStyleBackColor = true;
+            this.showdatabtn.Click += new System.EventHandler(this.showdatabtn_Click);
             // 
             // Form5
             // 

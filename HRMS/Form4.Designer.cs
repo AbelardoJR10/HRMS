@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.panel1 = new System.Windows.Forms.Panel();
             this.homebtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,10 +48,6 @@
             this.Editbtn = new System.Windows.Forms.Button();
             this.deparmenttxt = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.employeetxt = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.emailtxt = new System.Windows.Forms.TextBox();
-            this.showdata = new System.Windows.Forms.Button();
             this.idGridView1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameGridView2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surnameGridView3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +55,10 @@
             this.addressGridView5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.departmentGridView6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EmailGridView7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeetxt = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.emailtxt = new System.Windows.Forms.TextBox();
+            this.showdata = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -98,8 +99,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::HRMS.Properties.Resources._656_6560404_icons8_staff_filled_1400_icon_hd_png_download;
-            this.pictureBox1.InitialImage = global::HRMS.Properties.Resources._656_6560404_icons8_staff_filled_1400_icon_hd_png_download;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(13, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(111, 88);
@@ -252,41 +253,7 @@
             this.dataGridView2.Size = new System.Drawing.Size(1156, 208);
             this.dataGridView2.TabIndex = 6;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
-            // 
-            // employeetxt
-            // 
-            this.employeetxt.Location = new System.Drawing.Point(177, 186);
-            this.employeetxt.Name = "employeetxt";
-            this.employeetxt.Size = new System.Drawing.Size(208, 36);
-            this.employeetxt.TabIndex = 7;
-            this.employeetxt.TextChanged += new System.EventHandler(this.employeetxt_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(29, 380);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 30);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Email";
-            // 
-            // emailtxt
-            // 
-            this.emailtxt.Location = new System.Drawing.Point(177, 377);
-            this.emailtxt.Name = "emailtxt";
-            this.emailtxt.Size = new System.Drawing.Size(208, 36);
-            this.emailtxt.TabIndex = 9;
-            // 
-            // showdata
-            // 
-            this.showdata.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.showdata.Location = new System.Drawing.Point(1016, 393);
-            this.showdata.Name = "showdata";
-            this.showdata.Size = new System.Drawing.Size(174, 54);
-            this.showdata.TabIndex = 10;
-            this.showdata.Text = "show data";
-            this.showdata.UseVisualStyleBackColor = false;
-            this.showdata.Click += new System.EventHandler(this.showdata_Click);
+            this.dataGridView2.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_RowHeaderMouseClick);
             // 
             // idGridView1
             // 
@@ -343,6 +310,41 @@
             this.EmailGridView7.MinimumWidth = 10;
             this.EmailGridView7.Name = "EmailGridView7";
             this.EmailGridView7.Width = 200;
+            // 
+            // employeetxt
+            // 
+            this.employeetxt.Location = new System.Drawing.Point(177, 186);
+            this.employeetxt.Name = "employeetxt";
+            this.employeetxt.Size = new System.Drawing.Size(208, 36);
+            this.employeetxt.TabIndex = 7;
+            this.employeetxt.TextChanged += new System.EventHandler(this.employeetxt_TextChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(29, 380);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 30);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Email";
+            // 
+            // emailtxt
+            // 
+            this.emailtxt.Location = new System.Drawing.Point(177, 377);
+            this.emailtxt.Name = "emailtxt";
+            this.emailtxt.Size = new System.Drawing.Size(208, 36);
+            this.emailtxt.TabIndex = 9;
+            // 
+            // showdata
+            // 
+            this.showdata.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.showdata.Location = new System.Drawing.Point(1016, 393);
+            this.showdata.Name = "showdata";
+            this.showdata.Size = new System.Drawing.Size(174, 54);
+            this.showdata.TabIndex = 10;
+            this.showdata.Text = "show data";
+            this.showdata.UseVisualStyleBackColor = false;
+            this.showdata.Click += new System.EventHandler(this.showdata_Click);
             // 
             // Form4
             // 
